@@ -6,4 +6,6 @@ Pada Satria Data 2024 Divisi Big Data Challange tersaji sekumpulan data postinga
 Folder model merupakan letak penyimpanan model, folder data merupakan letak penyimpanan data, folder logs merupakan letak penyimpanan log, dan folder collab merupakan letak file notebook yang akan dijalankan.
 
 Pada repositori ini cukup jalankan notebook collab/lastday.ipynb untuk membuat model dan model akan tersimpan di file model. Kemudian jalankan satdatsubmit.ipynb untuk membuat forecasting cluster dan hasil forecasting akan didapatkan dalam bentuk csv. 
+
+
 *Notes: notebook menggunakan google colaboratory tolong sesuaikan dengan drive lokal jika ingin melakukan training data  
