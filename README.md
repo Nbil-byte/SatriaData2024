@@ -8,4 +8,22 @@ Folder model merupakan letak penyimpanan model, folder data merupakan letak peny
 Pada repositori ini cukup jalankan notebook collab/lastday.ipynb untuk membuat model dan model akan tersimpan di file model. Kemudian jalankan satdatsubmit.ipynb untuk membuat forecasting cluster dan hasil forecasting akan didapatkan dalam bentuk csv. 
 
 
-*Notes: notebook menggunakan google colaboratory tolong sesuaikan dengan drive lokal jika ingin melakukan training data  
+*Notes: notebook menggunakan google colaboratory tolong sesuaikan dengan drive lokal jika ingin melakukan training data
+
+# Teknik yang digunakan
+Setelah melakukan data exploratory ditemukan imbalansi yang sangat besar terhadap data dengan label politik yang berjumlah sekitar 3000 entri. Teknik-teknik berikut dilakukan untuk menghasilkan model yang representatif.
+
+Data Wrangling:
+
+Pengubahan label teks menjadi numerik (label encoding).
+Penghapusan stopwords.
+TF-IDF untuk transformasi teks menjadi representasi numerik.
+Stratified Train-Test Split untuk menjaga distribusi kelas.
+Data Training:
+
+Penggunaan model BERT (transfer learning) untuk fine-tuning model pada data spesifik.
+SMOTE untuk mengatasi masalah ketidakseimbangan kelas.
+Cross-validation dengan Stratified K-Fold untuk evaluasi yang lebih akurat.
+Evaluation:
+
+Menggunakan metrik seperti balanced accuracy, precision, recall, dan F1-score untuk mengevaluasi performa model.
